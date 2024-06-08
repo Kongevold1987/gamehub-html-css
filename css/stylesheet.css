@@ -1,0 +1,554 @@
+
+/**nav**/
+header{
+  background-color: #FFDE0A;
+}
+
+.logo{
+  padding-top: 1rem;
+}
+
+.nav-list{
+  font-family: "ibm plex mono", sans-serif,verdana;
+  font-size: xx-large;
+  display: flex;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 1rem;
+  list-style: none;
+  gap: 8rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+ul a{
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-flex{
+  margin-left: 10rem;
+  display: flex;
+  padding-left: 3rem;
+}
+
+.cart{
+  margin-left: 1rem;
+}
+
+/**general**/
+
+.container{
+  background-color:#FFDE0A ;
+  margin: 1.5rem;
+  border-radius: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "ibm plex mono", sans-serif, verdana;
+}
+
+.covers{
+  width: 200px;
+  height: auto;
+}
+
+footer{
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+
+/**index**/
+
+body{
+  background-image: url(/assets/images/bakgrunn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+}
+
+.universe{
+  margin-bottom: auto;
+  position: relative;
+  background-color: #000;
+  margin-top: -3rem;
+}
+
+.universe::before{
+  content: "";
+  background-image: url(/assets/images/spaceship-orbits-dark-galaxy-glowing-blue-comet-generated-by-ai.jpg);
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  opacity: 70%
+}
+
+.universe h1{
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  padding: 7rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+  text-decoration: underline;
+  text-decoration-color: #FFDE0A;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 30px;
+}
+
+.universe h2{
+  font-weight: 450;
+  padding-bottom: 70px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+}
+
+/**game of the day**/
+#game-of-the-day{
+  display: grid;
+  grid-template-columns: auto auto;
+	grid-gap: 10px;
+
+}
+
+.boxer-pic{
+  max-width: 300px;
+  height: auto;
+  grid-column: 2;
+  padding: 2em;
+  padding-top: 5em;
+}
+
+.boxer-text{
+  grid-column: 1;
+  padding-left: 2em;
+  font-size: x-large;
+  font-family: "ibm plex sans", sans-serif, verdana;
+}
+
+h3{
+  text-align: center;
+  font-size: 40px;
+  width: auto;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+ /**comunity post and gaming news**/
+
+ .community-post-and-gaming-news{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+ }
+
+ #community-post{
+ padding-left: 5em;
+ padding-right: 5em;
+ 
+ }
+
+ #community-post h4{
+  
+  font-size: x-large;
+ }
+
+ .gamergirl08{
+  width: 250px;
+  height: auto;
+ }
+
+ #gaming-news{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+ }
+
+ #gaming-news h5{
+  font-size: x-large;
+  grid-column: span 3;
+  padding-top: 1rem;
+  text-align: center;
+
+ }
+
+ #gaming-news p{
+  font-size: x-large;
+  grid-column: 1;
+  padding-left: 1em;
+  font-family: "ibm plex sans",sans-serif,verdana;
+
+ }
+ 
+ .bigger{
+  font-weight: 700;
+ }
+ .gaming{
+  width: 200px;
+  height: auto;
+  padding-bottom: 3rem;
+ }
+
+ /**best seller**/
+#bestseller{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: auto;
+}
+#best{
+  grid-row: 1;
+  grid-column: 2/9;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "ibm plex mono", sans-serif, verdana;
+}
+
+#forge{
+  grid-row: 3 ;
+  grid-column: 2 ;
+}
+#assassin{
+  grid-row: 3 ;
+  grid-column: 5 ;
+}
+#furious{
+  grid-row: 3 ;
+  grid-column: 8 ;
+}
+
+.navn1{
+  grid-row: 6 ;
+  grid-column: 2;
+  font-family: "ibm plex sans", sans-serif,verdana;
+  font-weight: 600;
+}
+.navn2{
+  grid-row: 6;
+  grid-column: 5;
+  font-family: "ibm plex sans", sans-serif,verdana;
+  font-weight: 600;
+}
+.navn3{
+  grid-row: 6;
+  grid-column: 8;
+  font-family: "ibm plex sans", sans-serif,verdana;
+  font-weight: 600;
+}
+
+
+ .login-form{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 2rem
+ }
+
+ .login{
+  grid-column: 3/5;
+  text-align: center;
+  font-family: "ibm plex sans", sans-serif,verdana;
+ }
+ .login-form textarea{
+  grid-row: 2;
+  grid-column: span 3;
+ }
+
+ .username{
+  padding-top: 1rem;
+  font-family: "ibm plex sans", sans-serif,verdana;
+ }
+
+ .password{
+  padding-top: 1rem;
+  font-family: "ibm plex sans", sans-serif,verdana;
+ }
+ 
+.login-button{
+  background-color: #3FA535;
+  grid-row: 3;
+  grid-column: 3/5;
+  margin-bottom: 1rem;
+  font-family: "ibm plex sans", sans-serif,verdana;
+}
+
+
+/**our games**/
+.games-h1{
+  padding: 5rem;
+  text-align: center;
+  font-size: 45px;
+}
+
+#mid3{
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFDE0A;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+#top3{
+  display: flex;
+  justify-content:space-around;
+  background-color: #FFDE0A;  
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+#bottom3{
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFDE0A;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.price{
+  font-family: "ibm plex sans", sans-serif,verdana;
+  color: #000;
+  font-weight: 500;
+}
+
+
+/**contact page**/
+
+.contact{
+  padding: 5rem;
+  text-align: center;
+  font-size: 45px;
+  font-family: "ibm plex mono", sans-serif,verdana;
+}
+
+.get-in-touch{
+  font-family: "ibm plex mono", sans-serif,verdana;
+  display: flex;
+}
+
+.message-pic{
+  min-width: 250px;
+  padding-left: 15em;
+}
+
+.forsøk{
+  padding: 5em;
+}
+
+.forsøk h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.forsøk p{
+  font-weight: 600;
+}
+
+.contact-form{
+  font-family: "ibm plex mono", sans-serif,verdana;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.message{
+  padding: 5rem;
+}
+.contact-form h3{
+  font-size: 60px;
+}
+
+.information{
+  padding-right: 9.7rem;
+}
+
+.contact-form p{
+  
+}
+
+.submit{
+  font-family: "ibm plex mono", sans-serif,verdana;
+  background-color: #3FA535;
+  margin-top: 1rem;
+}
+
+/**about us**/
+
+.about-2-parts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about{
+  font-size: 40px;
+  text-align: center;
+  padding: 2em;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.about p{
+  font-size: 32px;
+}
+
+.about-text{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 3;
+  font-size: 14px;
+  font-weight: 550;
+
+}
+
+.trestk{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.empower{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.empower h4{
+  padding-top: 1em;
+  margin: 0;
+  font-size: 32px;
+}
+
+.empower p{
+  grid-column: 2;
+  font-size: 24px;
+  font-family: "ibm plex sans", sans-serif, verdana;
+  padding-right: 1rem;
+}
+
+.empower-controller-img{
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+
+.logo-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission p{
+  font-size: 18px;
+  font-weight: 550;
+  padding-left: 2em;
+  padding-right: 0.5rem;
+  padding-bottom: 2em;
+  font-family: "ibm plex sans", sans-serif, verdana;
+}
+
+.mission h3{
+  margin: 0;
+}
+
+.mission{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.team{
+  font-size: 60px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.alex{
+  background-color: #FFDE0A;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 550;
+  font-family: "ibm plex sans", sans-serif, verdana;
+}
+
+.topp, .bunn{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.employee{
+  background-color: #FFDE0A;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-family: "ibm plex sans", sans-serif, verdana;
+  font-weight: 500;
+}
+
+.img-employe{
+  max-width: 150px;
+}
+
+/**Boxer Game Page**/
+
+.boxer-image-and-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
+.boxer-img{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.boxer-details{
+  font-family: "ibm-plex-sans", sans-serif, verdana;
+  font-size: small;
+  font-weight: 550;
+}
+
+.screenshots{
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem;
+
+}
+
+.img-screenshot{
+  display: flex;
+  justify-content: space-around;
+}
+
+.price{
+  font-family: "ibm-plex-sans", sans-serif, verdana;
+  font-weight: 550;
+}
+
+.add-to-cart{
+  font-family: "ibm-plex-sans", sans-serif, verdana;
+  background-color: #3FA535;
+  font-weight: 550;
+
+
+}
