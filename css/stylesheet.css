@@ -21,6 +21,7 @@ header{
   align-items: center;
 }
 
+
 ul a{
   text-decoration: none;
   color: #000;
@@ -429,6 +430,7 @@ h3{
 .empower p{
   grid-column: 2;
   font-size: 24px;
+  font-weight: 500;
   font-family: "ibm plex sans", sans-serif, verdana;
   padding-right: 1rem;
 }
@@ -446,7 +448,7 @@ h3{
 }
 
 .mission p{
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 550;
   padding-left: 2em;
   padding-right: 0.5rem;
@@ -508,24 +510,62 @@ h3{
 
 /**Boxer Game Page**/
 
-.boxer-image-and-text{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
-
-
-.boxer-img{
+.boxer-with-text{
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.boxer-details{
-  font-family: "ibm-plex-sans", sans-serif, verdana;
-  font-size: small;
+.boxer-image-add{
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.price-under-boxer{
+  font-size: 25px;
+  border-style: none;
+  padding: 0.5rem;
+}
+
+.add-under-boxer{
+  font-size: 25px;
+  border-style: none;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.price-under-boxer:hover{
+  border-color: #000;
+  border-style: solid;
+  font-weight: 600;
+  border-width: 5px;
+}
+
+.price-under-boxer:active{
+  background-color: #000;
+  color: #fff;
+}
+
+.add-under-boxer:hover{
+  border-color: #000;
+  border-style: solid;
+  font-weight: 600;
+  border-width: 5px;
+}
+
+.add-under-boxer:active{
+  background-color: #000;
+}
+
+
+
+.boxer-paragraf{
+  width: 100%;
+  padding: 1rem;
+  font-size: 26px;
+  font-family: "ibm plex sans",sans-serif, verdana;
   font-weight: 550;
+  margin-left: 3rem;
 }
 
 .screenshots{
@@ -542,13 +582,183 @@ h3{
 
 .price{
   font-family: "ibm-plex-sans", sans-serif, verdana;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .add-to-cart{
   font-family: "ibm-plex-sans", sans-serif, verdana;
   background-color: #3FA535;
-  font-weight: 550;
+  font-weight: 500;
 
 
 }
+
+/**cart**/
+
+.checkout{
+   text-align: center;
+  font-size: 2rem;
+  padding: 3em;
+}
+
+.payment-options{
+  display: flex; 
+  justify-content: space-around;
+}
+
+.order{
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.order h2{
+  font-size: 36px;
+  text-align: center;
+}
+
+.bilde-cart{
+  padding-left: 16rem;
+}
+
+.options{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.confirm{
+  background-color: #3FA535;
+  margin-left: 19rem;
+  margin-bottom: 1rem;
+  border-style: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: .5em;
+  font-family: "ibm plex sans", sans-serif, verdana;
+}
+
+.confirm:hover{
+  border-color: #000;
+  border-style: solid;
+  font-weight: 500;
+}
+
+.confirm:active{
+  background-color: #000;
+}
+
+.details{
+  text-align: center;
+}
+
+.details h4{
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.details p{
+  font-family: "ibm plex sans", sans-serif, verdana;
+  font-weight: 500;
+}
+
+.details textarea{
+  border-style: none;
+  padding-right: 10rem;
+  text-align: start;
+  margin-bottom: 2rem;
+  font-weight: 550;
+}
+
+.details textarea:hover{
+  border-style: solid;
+  border-color: #000;
+}
+
+.payment{
+  background-color: #3FA535;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-style: none;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.details li{
+  list-style: none;
+}
+
+.payment:hover{
+  border-color: #000;
+  border-style: solid;
+  font-weight: 500;
+}
+
+.payment:active{
+  background-color: #000;
+}
+
+
+/** checkout success**/
+
+.checkout-success{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+.checkout-success h1{
+  font-size: 58px;
+}
+
+.you-just-thank-you{
+  display: flex;
+}
+
+.checkout-bought{
+  width: 100%;
+  text-align: center;
+}
+
+.checkout-bought h2{
+  padding-bottom: 5rem;
+  font-size: 38px;
+  padding-top: 2rem;
+}
+
+.thank-you-for-shopping{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thank-you-for-shopping p{
+  text-align: center;
+}
+
+.thank-you-for-shopping img{
+  padding-left: 2rem;
+}
+
+.track-order{
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 1rem;
+  background-color: #3FA535;
+  color: #fff;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.track-order:hover{
+  border-color: #000;
+  border-style: solid;
+  font-weight: 500;
+}
+
+.track-order:active{
+  background-color: #000;
+}
+

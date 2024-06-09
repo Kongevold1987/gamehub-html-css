@@ -32,28 +32,38 @@
     </nav>
   </header>
   <main>
-    <section class="checkout">
+    <section class="checkout container">
       <h1>Checkout</h1>
     </section>
-    <section class="order">
+    <div class="payment-options">
+    <section class="order container">
       <h2>Your order</h2>
+      <div class="bilde-cart">
+        <a href="boxer.html">
       <img src="assets/images/boxer.jpg" alt="boxer game" width="200"height="auto">
+      <figcaption class="price">
       <p>boxer</p>
       <p>Price:199</p>
+      </figcaption></a>
+    </div>
       <button class="confirm">Confirm order</button>
     </section>
-    <section class="options">
+    <section class="options container">
       <h3>Payment options</h3>
+      <img class="paypal" src="assets/images/Paypal logo.svg" alt="paypal logo" width="200" height="auto">
+      <img class="visa" src="assets/images/Visa logo.svg" alt="visa logo" width="200" height="auto">
     </section>
-    <section class="details">
+    </div>
+    <section class="details container">
       <h4>Payment details</h4>
       <p>Fill in the neccassery information</p>
       <li><textarea>Card holder's name</textarea></li>
       <li><textarea>Card number</textarea></li>
       <li><textarea>Expiry date</textarea></li>
       <li><textarea>cvv</textarea></li>
-      <li><button class="payment">Submit Payment</button></li>
-    </section>
+      <a href="checkout-success.html">
+      <li><button class="payment">Submit Payment</button></li></a>
+    </section> 
     
   </main>
   <footer>
